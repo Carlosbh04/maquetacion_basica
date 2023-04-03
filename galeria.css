@@ -1,0 +1,51 @@
+*{
+    
+    box-sizing: border-box;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+.enlace-container{
+
+    height: 9vh;
+    background-color: black;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.link{
+    color: white;
+    padding: 15px 206px;
+    text-decoration: none;
+
+}
+
+.imagenes{
+    height: 100vh;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+
+img{
+   
+    height:370px;
+    width: 472px;
+    
+   
+    
+  
+   
+}
+
