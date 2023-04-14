@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="viajes.css">
+    <title>Agencia de Viejes</title>
+</head>
+<body>
+
+    <main>
+        <header>
+      <nav class="text1">
+        <a href="">Inicio</a>
+        <a href="">blog</a>
+        <a href="">contacto</a>
+      </nav>
+     
+      <h1 class="agencia">Agencia de Viaje</h1>
+
+    </header>
+    <section class="Descipcion">
+        <h2 class="text2">Quienes Somos?</h2>
+
+        <p class="text3">Somos una agencia de viajes especializada en ofrecer experiencias únicas e inolvidables en los destinos más increíbles del mundo.</p>
+    </section>
+    <section class="destinos">
+        <div class="titulo">
+            <h2>Destinos Populares</h2>
+        </div>
+        <div class="contenedor-tarjetas">
+        <div class="tarjeta">
+            <img src="img/cancun2.webp" alt="isla de cacun">
+            <h3>Cacún</h3>
+            <p>Desde 500$ USD</p>
+        </div>
+        <div class="tarjeta">
+            <img src="img/isla de margarita.jpeg" alt="isla de margarita venexuela">
+            <h3>Isla de Margarita Venezuela</h3>
+            <p>Desde 1000$ USD</p>
+            
+        </div>
+        <div class="tarjeta">
+            <img src="img/punta cana.jpg" alt="Isla de punta cana">
+            <h3>Isla de punta Cana</h3>
+            <p>Desde 800$ USD</p>
+        </div>
+    </div>
+
+    </section>
+    <section class="formulario">
+		<div>
+            <h2>Contáctanos</h2>
+		<form>
+			<label for="nombre">Nombre:</label>
+			<input type="text" id="nombre" placeholder="nombre">
+
+			<label for="origen">Origen:</label>
+			<input type="text" id="origen" placeholder="origen" >
+
+			<label for="destino">Destino:</label>
+			<input type="text" id="destino" placeholder="destino" >
+
+			<label for="personas">Nº de personas:</label>
+			<input type="number" id="personas" placeholder="Nº de personas">
+
+			<label for="fecha">Fecha:</label>
+			<input type="date" id="fecha" placeholder="fecha" >
+
+			<button id="registro" onclick="guardarInformacion()" type="reset">Solicita Información</button>
+	        <button id="filtra" onclick="filterInfo()" type="reset">Filtrar</button>
+		</form>
+        </div>
+
+        <aside class="aside aside2">
+            
+                <table class="table"  id="nuevaInformacion">  
+                        <!-- <tr  class="table__head">
+                        <th>Nombre</th>
+                        <th>Origen</th>
+                        <th>Destino</th>
+                        <th>Numero de persona</th>
+                        <th>Fecha</th>
+                        </tr> -->
+                </table> 
+    
+
+        </aside>
+        </section>
+
+    
+    </main>
+
+  
+<script src="registro.js"></script>
+
+
+    
+</body>
+</html>
