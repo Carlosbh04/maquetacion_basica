@@ -258,6 +258,17 @@ article{
     justify-content: center;
     align-items: center;
 }
+  .parrafo2{
+    height: 10vh;
+    width: 100%;
+    background-color: aqua;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }  
+
  .title {
     color: white;
     background-color: aqua;
