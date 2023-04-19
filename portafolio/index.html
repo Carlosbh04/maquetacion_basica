@@ -36,6 +36,7 @@
     
             <section class="acerca" id="Acerca_de_mi">
                 <h2>Acerca de mí.</h2>
+                <div class="acerca_img"><img src="img/contratar_programador.jpg" alt=""></div>
                 <p>Simpre me  a apasionado la tecnologia y el desarrollo web  pero no la habia puesto en practica,<br> ahora que estoy haciendo el bootcamp  es que e podido probar mis habilidades y conocimiento. con el poco tiempo que llevo <br> creo que e aprendido bastante espero tener grandes proyectos mas adelante. </p>
                 
             </section>
@@ -61,7 +62,7 @@
                 <article class="proye2">
                     <div class="proye2__2"><h3>Proyecto 1</h3></div>
                   <div class="img1">  <img src="img/imc.jpg" alt=""></div>
-                      <div class="parrafo"> <p>Calculadora IMC.</p>
+                      <div class="parrafo"> <p class="imc">Calculadora IMC.</p>
                         <p>Tecnologías utilizadas: HTML, CSS, JavaScript.</p>
                           <p><a href="https://github.com/Carlosbh04/Calcular-IMC.git">Repositorio Git</a></p>
                             <p><a href="http://127.0.0.1:5500/calculadora.html">Página web</a></p>
@@ -71,7 +72,8 @@
                    <div class="proye2__3">
                      <h3>Proyecto 2</h3>
                       </div>
-                        <div class="parrafo2"> <p>Agencia de viajes.</p>
+                      <div class="img2"><img src="img/viaje.jpg" alt=""></div>
+                        <div class="parrafo2"> <p class="imc1">Agencia de Viajes.</p>
                           <p>Tecnologías utilizadas: HTML, CSS, JavaScript.</p>
                            <p><a href="https://github.com/Carlosbh04/maquetacion_basica/tree/dia3">Repositorio Git</a></p>
                              <p><a href="https://www.tu-página.com">Página web</a></p>
@@ -84,9 +86,15 @@
          <h2>Contactame</h2>
     
            <div class="contacto2">
-            <li class="contac">Correo electrónico: [carlosehernandezb04@gmail.com]</li>
-            <li class="contac">Teléfono: [642970617]</li>
-            <li class="contac"> Instagram : <a href="https://www.instagram.com/carloshb04/">Instagram</a><li>
+            <form action="enviar.php" method="post">
+
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre Completo" required>
+                <input type="email" id="email" name="email" placeholder="Correo" required>
+                <input type="tel" id="telefono" name="telefono" placeholder="Telefono">
+                <textarea class="mensaje" id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
+                <input type="submit" value="Enviar">
+              </form>
+              
         </div> 
        </section>
        <footer class="footer">

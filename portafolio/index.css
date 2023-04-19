@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+body{
+    background-image: url(img/imagen.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 header{
 
     width: 100%;
@@ -38,16 +44,20 @@ a:hover{
 .logo{
     height: 7vh;
     width: 45%;
-    background-color: bisque;
+    /* background-color: bisque; */
+    transition: all 300ms;
 
     display: flex;
     justify-content: center;
    
 }
+.logo:hover{
+    transform: scale(1.15);
+}
 .presentacion{
     width: 100%;
     height: 60vh;
-    background-color: aqua;
+    /* background-color: aqua; */
 
     display: flex;
     justify-content: center;
@@ -57,6 +67,13 @@ a:hover{
 .presentacion img{
     height: 40vh;
     margin-top: 40px;
+    transition: all 300ms;
+    position: relative;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+.presentacion img:hover{
+    transform: scale(1.1);
 }
 .presentacion h1{
     font-size: 40px;
@@ -66,25 +83,61 @@ a:hover{
     line-height: 2;
 }
 .acerca{
-    height: 50vh;
+    height: 100vh;
     width: 100%;
-    background-color: beige;
+    /* background-color: beige; */
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+.acerca h2{
+    font-size: 35px;
+    
+    height:15vh;
+    width: 100%;
+    /* background-color: aquamarine; */
 
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-}
-.acerca h2{
-    font-size: 35px;
 }
 .acerca p{
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    height: 20vh;
+    width: 100%;
+    /* background-color: aqua; */
 
     display: flex;
     align-items: center;
+    justify-content: center;
     text-align: center;
+}
+.acerca_img{
+    height: 48vh;
+    width: 100%;
+    /* background-color: aqua; */
+    transition: all 300ms;
+    border-radius: 20px;
+    /* border: 2px solid black; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.acerca_img:hover{
+    transform: scale(1.1);
+}
+.acerca_img img{
+    height: 40vh;
+    margin-top: 40px;
+    border-radius: 20px;
+    border: 2px solid black;
+
 }
 
 .logo img{
@@ -95,7 +148,7 @@ a:hover{
     justify-content: center;
 }
 .tecnologias{
-    background-color: yellow;
+    /* background-color: yellow; */
     width: 100%;
     height: 96vh;
     
@@ -109,9 +162,9 @@ a:hover{
 .tecnologias h2{
     height: 20vh;
     width: 100%;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color:rgb(247, 209, 209);
+    color:rgb(0, 0, 0);
     font-size: 50px;
 
     display: flex;
@@ -157,37 +210,123 @@ a:hover{
   width: 25%;
   height: 30vh;
   color:white;
-  background-color: black;
-  
+  background-color: rgb(224, 20, 149);
+  border-radius: 10px;
+  border: 2px solid rgb(0, 0, 0);
+  padding: 10px;
+
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 20px;
+}
+.link img{
+    border: 8px solid black;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 10px rgb(180, 106, 106);
+    transition: all 300ms;
+    margin: 10px;
+}
+.link img:hover{
+    transform: scale(1.1);
 }
 .link2{
     width: 25%;
     height: 30vh;
     color:white;
     background-color: rgb(210, 25, 25);
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+.link2 img:hover{
+    transform: scale(1.1);
+}
+.link2 img{
+    border: 8px solid black;
+    border-radius: 20px;
+    transition: all 300ms;
 }
 .link3{
     width: 25%;
     height: 30vh;
-  color:white;
+    color:white;
     background-color: rgb(82, 20, 198);
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 10px;
+    
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+.link3 img:hover{
+    transform: scale(1.1);
+}
+.link3 img{
+    border: 8px solid black;
+    border-radius: 20px;
+    transition: all 300ms;
 }
 .link4{
     width: 25%;
     height: 30vh;
-  color:white;
+    color:white;
     background-color: rgb(238, 175, 175);
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 10px;
+    
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+.link4 img:hover{
+    transform: scale(1.1);
+}
+.link4 img{
+    border: 8px solid black;
+    border-radius: 20px;
+    transition: all 300ms;
 }
 .link5{
     width: 25%;
     height: 30vh;
-  color:white;
+    color:white;
     background-color: rgb(127, 208, 20);
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 10px;
+    
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+
+}
+.link5 img:hover{
+    transform: scale(1.1);
+}
+.link5 img{
+    border: 8px solid black;
+    border-radius: 20px;
+    transition: all 300ms;
 }
 .imagenes{
     width: 100%;
     height: 75vh;
-    background-color: brown;
+    /* background-color: brown; */
 
     display: flex;
     flex-direction: row;
@@ -199,7 +338,7 @@ a:hover{
 .proye{
     height: 100vh;
     width: 100%;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     
 
     display: flex;
@@ -214,7 +353,7 @@ a:hover{
 article{
     height: 48vh;
     width: 100%;
-    background-color: blue;
+    /* background-color: blue; */
 
     display: flex;
     justify-content: center;
@@ -223,55 +362,59 @@ article{
     
 }
 .proye2{
-    height: 48vh;
+    height: 50vh;
     width: 40%;
-    background-color: brown;
+    /* background-color: brown; */
 
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
    
 
 }
 .proye3{
-    height: 48vh;
+    height: 50vh;
     width: 40%;
-    background-color: rgb(192, 62, 111);
+    /* background-color: rgb(192, 62, 111); */
     margin-top: 10px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     
 
 }
 .proye2__3{
     height: 7vh;
-    width: 30%;
-    background-color: rgb(252, 17, 17);
-    color: white;
+    width: 35%;
+    /* background-color: rgb(252, 17, 17); */
+    color: rgb(1, 0, 0);
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
   .parrafo2{
-    height: 10vh;
+    height: 14vh;
     width: 100%;
-    background-color: aqua;
+    /* background-color: aqua; */
+
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }  
+ 
 
  .title {
-    color: white;
-    background-color: aqua;
+    color: rgb(6, 1, 1);
+    /* background-color: aqua; */
     height: 20vh;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
@@ -286,28 +429,46 @@ article{
 
 .proye2__2{
     height: 7vh;
-    width: 30%;
-    background-color: black;
-    color: white;
+    width: 35%;
+    /* background-color: black; */
+    color: rgb(8, 0, 0);
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .parrafo{
-    height: 10vh;
+    height: 14vh;
     width: 100%;
-    background-color: aqua;
+    /* background-color: aqua; */
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+.imc{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.imc1{
+    
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 .img1{
- height: 30vh;
+ height: 60vh;
  width: 100%;
-background-color: black;
+ /* background-color: black; */
+
+position: relative;
+display: inline-block;
+border-radius: 20px;
+overflow: hidden;
+/* border: 2px solid #040303; */
 
 display: flex;
 justify-content: center;
@@ -316,12 +477,44 @@ align-items: center;
 .img1 img{
     height: 30vh;
     width: 70%;
+    border: 2px solid #000000;
+    border-radius: 40px;
+    transition: all linear 0.7s;
+}
+.img1:hover img{
+    opacity: 0;
+}
+.img2{
+    height: 60vh;
+    width: 100%;
+    /* background-color: rgb(247, 240, 240); */
+    position: relative;
+    display: inline-block;
+    border-radius: 20px;
+    overflow: hidden;
+    /* border: 2px solid #040303; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img2 img{
+ height: 30vh;
+ width: 70%;
+ border: 4px solid #000000;
+ border-radius: 40px;
+
+ transition: all linear 0.7s;
+
+}
+.img2:hover img{
+    opacity: 0;
 }
 .conta{
     height: 50vh;
     width: 100%;
-    background-color: black;
-    color: white;
+    /* background-color: black; */
+    color: rgb(3, 0, 0);
     gap: 40px;
    
     display: flex;
@@ -338,6 +531,7 @@ align-items: center;
     background-color: aqua;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
 
     display: flex;
     justify-content: center;
@@ -348,8 +542,10 @@ align-items: center;
 .contacto2{
     height: 20vh;
     width: 50%;
-    background-color: blue;
+    /* background-color: blue; */
     gap: 20px;
+    color: black;
+   
     
 
     display: flex;
@@ -357,9 +553,11 @@ align-items: center;
     align-items: center;
     flex-direction: column;
 }
+
 .conta{
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 .contac a{
@@ -386,7 +584,7 @@ a:hover{
 .footer1{
     height: 7vh;
     width: 100%;
-    background-color: rgb(192, 26, 26);
+    /* background-color: rgb(192, 26, 26); */
 
 
                 display: flex;
@@ -405,7 +603,8 @@ a:hover{
 }
 .derechos{
     
-    background-color:royalblue;
+    /* background-color:royalblue; */
+    color: white;
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
  margin-bottom: 50px;
@@ -416,3 +615,36 @@ a:hover{
     */
 }
 
+li{
+    list-style: none;
+}
+form{
+    background-color: aqua;
+    height: 50vh;
+    width: 100%;
+
+    display: flex;
+    /* justify-content: space-around; */
+    flex-direction: column;
+
+}
+
+input{
+    height: 6vh;
+    width: 100%;
+    background-color: aqua;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.mensaje{
+    height: 10vh;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
