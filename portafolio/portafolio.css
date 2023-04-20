@@ -1,3 +1,8 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -76,7 +81,20 @@ nav a:hover{
     transform: scale(1.1);
 }
 .presentacion h1{
-    font-size: 40px;
+
+    font-family: 'Tilt Prism', cursive;
+    color:red;
+    font-size: 4em;
+    font-weight: bold;
+    background: linear-gradient(
+        180deg,
+        #293031,
+        #173b9c
+
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
 }
 .presentacion p{
     font-family: Arial, Helvetica, sans-serif;
@@ -542,9 +560,9 @@ align-items: center;
 .contacto2{
     height: 30vh;
     width: 50%;
-    /* background-color: rgb(4, 4, 5); */
+    /* background-color: rgb(7, 7, 232); */
     gap: 20px;
-    color: black;
+    color: rgb(8, 7, 7);
    
     
 
@@ -623,7 +641,7 @@ li{
 }
 form{
   
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
@@ -631,6 +649,7 @@ form{
     border: none;
     outline: none;
     color: white;
+    /* background-color: aqua; */
    
 
     display: flex;
@@ -643,7 +662,7 @@ form{
 
 input{
     height: 5vh;
-    width: 100%;
+    width: 80%;
     box-sizing: border-box;
     /* border: 2px solid #ccc;
     background-color: white; */
@@ -658,7 +677,7 @@ input{
     
 }
 .mensaje{
-    width: 100%;
+    width: 80%;
     height: 15vh;
     padding: 12px 20px;
     box-sizing: border-box;
@@ -673,9 +692,20 @@ input{
 button{
     height: 4vh;
     width: 20%;
+    color:rgb(123, 55, 26) ;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background-color: aqua; */
+
+
+   
+    
 
 }
+
+
+
+
+
