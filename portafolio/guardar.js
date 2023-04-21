@@ -14,8 +14,8 @@
     localStorage.setItem('telefono', telefono);
     localStorage.setItem('mensaje', mensaje);
 
-//     // Redirigir a la página de éxito
-//     window.location.href = 'exito.html';
+    // Redirigir a la página de éxito
+    window.location.href = 'gracias.html';
   }
 
   // Asignar el manejador de eventos al formulario
