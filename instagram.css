@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    height: 88vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+article{
+    height: 80vh;
+    width: 30%;
+    padding-left: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.cajon{
+    height: 55vh;
+    width: 60%;
+    border: 2px solid rgb(205, 203,203);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.Titulo{
+    height: 12vh;
+    width: 98%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.Titulo img{
+    height: 7vh;
+    width: 50%;
+}
+form{
+    height: 40vh;
+    width: 90%;
+    padding-top: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
