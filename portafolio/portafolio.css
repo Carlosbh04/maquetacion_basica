@@ -70,16 +70,29 @@ nav a:hover{
     flex-direction: column;
 }
 .presentacion img{
-    height: 40vh;
+    height: 30vh;
     margin-top: 40px;
-    transition: all 300ms;
-    position: relative;
+    /* transition: all 300ms;
+    position: relative; */
+
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 1px 10px 25px rgba(0, 0,0, 0.5);
+    
     border-radius: 20px;
     border: 2px solid black;
 }
 .presentacion img:hover{
-    transform: scale(1.1);
+    transform: translateX(-20%);
+    filter: brightness(10%);
 }
+.presentacion img {
+    width: 100%;
+    height: 41vh;
+
+    transition: 2s;
+}
+
 .presentacion h1{
 
     font-family: 'Tilt Prism', cursive;
@@ -90,11 +103,12 @@ nav a:hover{
         180deg,
         #293031,
         #173b9c
-
-        );
+ );
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
+
+   
 }
 .presentacion p{
     font-family: Arial, Helvetica, sans-serif;
@@ -135,7 +149,7 @@ nav a:hover{
     text-align: center;
 }
 .acerca_img{
-    height: 48vh;
+    height: 20vh;
     width: 100%;
     /* background-color: aqua; */
     transition: all 300ms;
