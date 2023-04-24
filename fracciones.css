@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.conte{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 2fr 1fr 2fr ;
+    grid-template-rows: 2fr 1fr;
+
+}
+.verde{
+
+    background-color: greenyellow;
+    text-align: center;
+
+}
+
+.negro {
+
+    background-color: black;
+    text-align: center;
+    color: white;
+
+}
+.verde1{
+
+    background-color: greenyellow;
+    text-align: center;
+
+}
+.negro1{
+
+    background-color: black;
+    color: white;
+    text-align: center;
+    
+}
+
