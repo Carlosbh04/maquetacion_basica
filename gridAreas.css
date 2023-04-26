@@ -1,0 +1,105 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+.machoAlfa{
+    display: grid;
+    grid-template-areas:
+    'Header Header Imagen'
+    'Aside Contenido Contenido'
+    'Aside2 Texto Texto'
+    'Footer Footer Footer'
+    
+    ;
+
+}
+
+.child_a{
+    grid-area:Header;
+    background-color: brown;
+    color: white;
+    text-align: center;
+    height: 10vh;
+    padding-top: 20px ;
+}
+
+.child_al{
+  grid-area: Imagen;
+  background-color: rgb(59, 0, 0);
+  color: white;
+  text-align: center;
+  height: 10vh;
+  padding-top: 20px;
+}
+
+
+.child_b{
+   
+    grid-area: Aside;
+    background-color: rgb(225, 96, 9);
+    height: 620px;
+
+    display: grid;
+    grid-template-areas: 
+    'Aside'
+    'vacio' 
+    'Aside2';
+}
+
+.drako{
+   grid-area: Aside ;
+   background-color: white;
+   color:red;
+   margin: 10px;
+   text-align: center;
+   padding-top: 10px;
+}
+.drako1{
+    grid-area: Aside2 ;
+    background-color: white;
+    color:red;
+    margin: 10px;
+    text-align: center;
+    padding-top: 10px;
+ }
+
+ .child_c{
+    grid-area: Contenido ;
+    background-color: orangered;
+    color: white;
+    padding-top: 10px;
+    text-align: center;
+
+
+    display: grid;
+    grid-template-areas: 
+    'Contenido'
+    'Texto' ;
+
+}
+
+.drako2{
+    border: 2px solid white;
+    margin: 10px;
+    padding-top: 10px;
+}
+.drako3{
+    border: 2px solid white;
+    margin: 10px;
+    padding-top: 10px;
+}
+
+.child_d{
+    grid-area: Footer;
+    background-color: rgb(59, 0, 0);
+    color: white;
+    text-align: center;
+    height: 119px;
+    padding: 10px;
+
+
+    display: grid;
+    grid-template-areas: 'Footer';
+}
