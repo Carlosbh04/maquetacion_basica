@@ -4,13 +4,16 @@
     box-sizing: border-box;
 
 }
+.macho{
 
-.header{
     display: grid;
     grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4];
     grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3] 1fr [y4] ;
+    height: 100vh;
 }
-.contenido{
+
+.header{
+
     grid-column: x0 / x4;
     grid-row: y0 / y1;
     background-color: black;
@@ -18,5 +21,127 @@
     color: wheat;
     text-align: center;
     height: 10vh;
+    padding-top: 20px;
+
+  
+}
+
+.contenido{
+   
+grid-column: x0 / x3;
+grid-row: y1 / y3;
+background-color: blue;
+color: white;
+padding:20px ;
+height: 80vh;
     
+display: grid;
+grid-template-columns: [xi0] 1fr [xi1] 1fr [xi2] 1fr [xi3] 1fr [xi4];
+grid-template-rows: [yi0] 1fr [yi1] 1fr [yi2] 1fr [yi3] 1fr [yi4] 1fr [yi5] 1fr [yi6];
+
+}
+
+.drako1{
+ 
+    grid-column: xi0 / xi4;
+    grid-row: yi0 / yi2;
+
+    border: 1px solid white;
+    font-size: xx-large;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-top: 20px;
+  
+}
+.drako2{
+    grid-column: xi0 / xi2;
+    grid-row: yi2 / yi6;
+    border: 1px solid white;
+    margin-right: 7px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.drako3{
+    grid-column: xi2 / xi4;
+    grid-row: yi2 / yi6;
+    border: 1px solid white;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.Menu{
+    grid-column: x3 / x4;
+    grid-row: y1 / y3;
+    background-color: aquamarine;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: [x3] 1fr [x4];
+    grid-template-rows:[y0] 1fr [y1] 1fr [y2] 1fr [y3] 1fr [y4];
+}
+.drako4{
+    grid-column: x3 / x4;
+    grid-row: y0 / y1;
+
+    font-size: xx-large ;
+    border: 2px solid black;
+    margin-bottom: 7px;
+    padding-top: 40px;
+}
+.drako5{
+   grid-column: x3 / x4;
+   grid-row: y1 / y2;
+   
+   background-color: black;
+   margin-bottom: 7px;
+   padding-top: 50px;
+}
+.drako6{
+    grid-column: x3 / x4;
+    grid-row: y2/ y3 ;
+    background-color: black;
+    padding-top: 50px;
+    margin-bottom: 7px;
+}
+.drako7{
+    grid-column: x3 / x4;
+    grid-row: y3 / y4;
+
+    background-color: black;
+    padding-top: 50px;
+    margin-bottom: 7px;
+    
+}
+
+.footer{
+    grid-column: x0 / x4;
+    grid-row: y3 / y4;
+
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    height: 10vh;
+
+    display:grid;
+
+   grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4];
+   grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3] 1fr [y4];
+}
+
+.drako8{
+    grid-column: x0 / x2;
+    grid-row: y0 / y4;
+
+    border: 2px solid black;
+    margin-right: 8px;
+    padding-top: 20px;
+}
+
+.drako9{
+    grid-column: x2 / x4;
+    grid-row: y0 / y4;
+    border: 2px solid black;
+    margin-right: 8px;
+    padding-top: 20px;
 }
